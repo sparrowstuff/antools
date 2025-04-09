@@ -1,0 +1,26 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('/antools/fonts/Poppins-Medium.woff2') format('woff2'),
+		url('/softclean/fonts/Mont-Regular.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/antools/fonts/Poppins-Light.woff2') format('woff2'),
+		url('/antools/fonts/Poppins-Light.woff2') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/antools/fonts/Poppins-Bold.woff2') format('woff2'),
+		url('/antools/fonts/Poppins-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

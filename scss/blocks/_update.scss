@@ -1,0 +1,99 @@
+.update {
+	padding: 0 0 12rem 0;
+	$root: &;
+
+	animation: view linear;
+	animation-timeline: view();
+	animation-range: entry 0 cover 20%;
+
+	@media (max-width: 1024px) {
+		padding: 5rem 0 5rem 0;
+	}
+
+	@media (max-width: 768px) {
+		padding: 2rem 0 4rem 0;
+	}
+
+	&__main {
+		display: flex;
+		align-items: flex-start;
+		gap: 9vw;
+
+		@media (max-width: 1010px) {
+			flex-direction: column;
+			gap: 1.5rem;
+			align-items: center;
+		}
+	}
+
+	&__left-menu {
+		display: flex;
+		flex-direction: column;
+		gap: 3.75rem;
+
+		@media (max-width: 1010px) {
+			flex-direction: row;
+			justify-content: space-between;
+			gap: 30vw;
+			align-items: flex-end;
+		}
+
+		@media (max-width: 643px) {
+			flex-direction: column;
+			gap: 1rem;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		gap: 1.87rem;
+
+		@media (max-width: 643px) {
+			align-items: center;
+		}
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: clamp($rem-15, 5vw, $rem-3);
+		line-height: 130%;
+		color: $white-90;
+
+		@media (max-width: 643px) {
+			text-align: center;
+		}
+	}
+
+	&__description {
+		font-weight: 500;
+		font-size: $rem-112;
+		line-height: $rem-187;
+		color: $white-55;
+
+		max-width: 427px;
+
+		@media (max-width: 643px) {
+			text-align: center;
+		}
+	}
+
+	&__more-link {
+		padding: 1.1rem 2.5rem 1rem 2.8rem;
+		border-radius: 0.5rem;
+		color: $white;
+		background-color: $orange;
+
+		transition: color $transition-300;
+
+		max-width: 198px;
+		min-height: 3.62rem;
+
+		&:hover,
+		&:focus-visible {
+			color: $black;
+		}
+	}
+}

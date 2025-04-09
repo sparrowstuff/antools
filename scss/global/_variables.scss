@@ -1,0 +1,56 @@
+// colors
+
+$black: #000000;
+$main: #1e252b;
+$main-light: #283036;
+$grey-02: rgba(44, 53, 61, 0.2);
+$grey-06: rgba(40, 48, 54, 0.6);
+$purple: #837a93;
+$light-white: #fdf5ff;
+$white: #ffffff;
+$white-05: rgba(255, 255, 255, 0.05);
+$white-10: rgba(255, 255, 255, 0.1);
+$white-15: rgba(255, 255, 255, 0.15);
+$white-20: rgba(255, 255, 255, 0.2);
+$white-38: rgba(255, 255, 255, 0.38);
+$white-55: rgba(255, 255, 255, 0.55);
+$white-78: rgba(255, 255, 255, 0.78);
+$white-90: rgba(255, 255, 255, 0.9);
+$orange: #ff6e30;
+$orange-light: #ffa537;
+$orange-light-55: rgba(255, 165, 55, 0.55);
+$red: #fd3b41;
+$brown-03: rgba(255, 200, 0, 0.3);
+
+// typography
+
+$poppins: 'Poppins', 'Arial', sans-serif;
+
+$rem-068: 0.68rem; // 11px
+$rem-085: 0.85rem; // 14px
+$rem-1: 1rem; // 16px
+$rem-112: 1.12rem; // 18px
+$rem-125: 1.25rem; // 20px
+$rem-131: 1.31rem; // 21px
+$rem-137: 1.37rem; // 22px
+$rem-15: 1.5rem; // 24px
+$rem-156: 1.56rem; // 25px
+$rem-168: 1.68rem; // 27px
+$rem-187: 1.87rem; //30px
+$rem-206: 2.06rem; // 33px
+$rem-225: 2.25rem; // 36px
+$rem-243: 2.43rem; // 39px
+$rem-281: 2.81rem; // 45px
+$rem-3: 3rem; // 48px
+$rem-312: 3.12rem; // 50px
+$rem-387: 3.87rem; // 62px
+$rem-437: 4.37rem; // 70px
+
+// viewport
+
+$vp-tablet: 1023px;
+$vp-mobile: 767px;
+
+// transition
+
+$transition-300: ease-in 0.3s;

@@ -1,0 +1,67 @@
+.header {
+	padding: 1.93rem 0 6.43rem 0;
+	$root: &;
+	animation: headerFadeIn 1s ease-in forwards;
+	position: relative;
+	z-index: 10000;
+
+	&__main {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 1.25rem;
+
+		@media (max-width: 850px) {
+			gap: 0.5rem;
+		}
+	}
+
+	&__main-link {
+		display: flex;
+		align-items: center;
+		gap: 0.75rem;
+
+		transition: scale $transition-300;
+
+		#{$root}__main-link-text {
+			font-weight: 600;
+			font-size: $rem-137;
+			line-height: $rem-206;
+			color: $white-90;
+			transition: color $transition-300;
+		}
+
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+			scale: 1.1;
+
+			#{$root}__main-link-text {
+				color: $orange;
+			}
+		}
+	}
+
+	&__btn-block {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+
+		@media (max-width: 768px) {
+			#{$root}__login-btn,
+			#{$root}__sign-up-btn {
+				display: none;
+			}
+		}
+	}
+
+	&__login-btn {
+		opacity: 0;
+		animation: btnSignInFadeIn 0.8s ease-in forwards 2s;
+	}
+
+	&__sign-up-btn {
+		opacity: 0;
+		animation: mainNavFadeIn 0.8s ease-in forwards 3s;
+	}
+}

@@ -1,0 +1,13 @@
+.transform {
+	.burger-menu__top-line {
+		transform: translateY(8px) rotate(45deg);
+	}
+
+	.burger-menu__bottom-line {
+		transform: translateY(-10px) rotate(-45deg);
+	}
+
+	.burger-menu__main-line {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,43 @@
+.contributor {
+	padding: 0 0 8rem 0;
+
+	@media (max-width: 768px) {
+		padding: 0 0 7rem 0;
+	}
+
+	&__main {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 6.25rem;
+
+		@media (max-width: 768px) {
+			gap: 2rem;
+		}
+	}
+
+	&__heading {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: 1.56rem;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: clamp($rem-15, 5vw, $rem-3);
+		line-height: 130%;
+		color: $white-90;
+		text-align: center;
+	}
+
+	&__description {
+		font-weight: 500;
+		font-size: clamp($rem-085, 5vw, $rem-112);
+		line-height: $rem-187;
+		text-align: center;
+		color: $white-55;
+
+		max-width: 26.68rem;
+	}
+}

@@ -1,0 +1,45 @@
+.footer-nav {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	column-gap: min(7vw, 7.18rem);
+	align-items: start;
+
+	@media (max-width: 560px) {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	&__item {
+		display: flex;
+		flex-direction: column;
+		gap: 1.25rem;
+
+		@media (max-width: 560px) {
+			align-items: center;
+		}
+	}
+
+	&__links {
+		display: flex;
+		flex-direction: column;
+		gap: 0.62rem;
+
+		@media (max-width: 560px) {
+			align-items: center;
+		}
+	}
+
+	&__link {
+		font-weight: 500;
+		font-size: $rem-1;
+		line-height: 100%;
+		color: $white-55;
+
+		transition: color $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			color: $orange;
+		}
+	}
+}

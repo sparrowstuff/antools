@@ -1,0 +1,45 @@
+.tools {
+	padding: 9.8rem 0 12.5rem 0;
+	$root: &;
+
+	@media (max-width: 1024px) {
+		padding: 2rem 0 5rem 0;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 6.8rem;
+
+		@media (max-width: 1024px) {
+			gap: 2rem;
+		}
+	}
+
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1.56rem;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: clamp($rem-15, 7vw, $rem-3);
+		line-height: $rem-387;
+		color: $white-90;
+
+		text-align: center;
+	}
+
+	&__description {
+		font-weight: 500;
+		font-size: clamp($rem-085, 5vw, $rem-112);
+		line-height: $rem-187;
+		color: $white-55;
+		text-align: center;
+
+		max-width: 427px;
+	}
+}

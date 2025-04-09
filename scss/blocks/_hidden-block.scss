@@ -1,0 +1,7 @@
+.hidden-block {
+	opacity: 0;
+
+	&--visible {
+		animation: animate 1s ease-in forwards;
+	}
+}

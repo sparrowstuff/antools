@@ -1,0 +1,64 @@
+.people {
+	padding: 0 0 7.62rem 0;
+	$root: &;
+
+	animation: view linear;
+	animation-timeline: view();
+	animation-range: entry 0 cover 20%;
+
+	@media (max-width: 768px) {
+		padding: 0 0 5rem 0;
+	}
+
+	&__inner {
+		display: flex;
+		gap: min(5vw, 3.56rem);
+		min-width: 53.12rem;
+		align-items: center;
+		justify-content: center;
+		scroll-snap-align: start;
+		padding-bottom: 1rem;
+
+		@media (max-width: 930px) {
+			min-width: 92vw;
+			width: 100%;
+		}
+
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 0.5rem;
+		}
+
+		@media (max-width: 500px) {
+			min-width: 84vw;
+		}
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: clamp($rem-068, 5vw, $rem-085);
+		line-height: $rem-187;
+		color: $white-78;
+		letter-spacing: 0.15em;
+
+		max-width: 24.56rem;
+
+		position: relative;
+	}
+
+	&__text-comma {
+		position: absolute;
+		top: -2.87rem;
+		left: -14%;
+	}
+
+	&__btn-menu {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		@media (max-width: 960px) {
+			margin: 0 auto;
+		}
+	}
+}

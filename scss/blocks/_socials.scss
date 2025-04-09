@@ -1,0 +1,64 @@
+.socials {
+	display: flex;
+	align-items: center;
+	$root: &;
+
+	&__icon {
+		color: $white-78;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		transition: color $transition-300;
+	}
+
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 58px;
+		height: 58px;
+		opacity: 0;
+	}
+
+	&__item {
+		&:hover,
+		&:focus-visible {
+			outline: unset;
+
+			#{$root}__icon {
+				color: $orange;
+			}
+		}
+
+		&--facebook {
+			#{$root}__link {
+				animation: SocialsIconFall 1.5s ease-in forwards 1.5s;
+			}
+
+			#{$root}__icon {
+				padding: 5px 5px 5px 5px;
+			}
+		}
+
+		&--insta {
+			#{$root}__link {
+				animation: SocialsIconFall 1.5s ease-in forwards 2.5s;
+			}
+
+			#{$root}__icon {
+				padding: 0 1px 1px 0px;
+			}
+		}
+
+		&--twitter {
+			#{$root}__link {
+				animation: SocialsIconFall 1.5s ease-in forwards 3.5s;
+			}
+
+			#{$root}__icon {
+				padding: 4px 1px 1px 3px;
+			}
+		}
+	}
+}

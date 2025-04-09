@@ -1,0 +1,98 @@
+@keyframes headerFadeIn {
+	0% {
+		transform: translateY(40px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes mainNavFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes btnSignInFadeIn {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes heroFadeIn {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes heroTitleFadeIn {
+	0% {
+		transform: translateX(-40px);
+		opacity: 0;
+	}
+
+	100% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes SocialsIconFall {
+	0% {
+		transform: translateY(-30px) rotate(180deg);
+		opacity: 0;
+	}
+
+	25% {
+		transform: translateY(-25px);
+		opacity: 1;
+	}
+
+	100% {
+		transform: translateY(0) rotate(0);
+		opacity: 1;
+	}
+}
+
+@keyframes view {
+	0% {
+		opacity: 0;
+		scale: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+		scale: 1;
+	}
+}
+
+@keyframes animate {
+	0% {
+		opacity: 0;
+		transform: translateY(-1rem);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

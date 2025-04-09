@@ -1,0 +1,65 @@
+.hero {
+	padding: 0 0 2.5rem;
+	background: url('/github-repositories/portfolio/antools/images/hero-banner.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	opacity: 0;
+
+	transition: transform $transition-300;
+
+	animation: heroFadeIn 1s ease-in forwards;
+
+	@media (max-width: 560px) {
+		background: none;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 3.75rem;
+
+		@media (max-width: 768px) {
+			gap: 1.25rem;
+		}
+	}
+
+	&__heading {
+		display: flex;
+		flex-direction: column;
+		gap: 1.87rem;
+		opacity: 0;
+
+		animation: heroTitleFadeIn 1s ease-in forwards 1s;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: clamp($rem-1, 7vw, $rem-312);
+		line-height: $rem-437;
+		color: $white-90;
+
+		max-width: 37.5rem;
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: clamp($rem-085, 4vw, $rem-112);
+		line-height: $rem-187;
+		color: $white-55;
+
+		max-width: 487px;
+	}
+
+	&__contact-block {
+		display: flex;
+		flex-direction: column;
+		gap: 6.87rem;
+
+		animation: heroFadeIn 1s ease-in forwards;
+
+		@media (max-width: 768px) {
+			gap: 3.55rem;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+.btn {
+	padding: 0.75rem 1.75rem 0.75rem 1.75rem;
+	background-color: $orange;
+	border-radius: 8px;
+	border: unset;
+
+	font-weight: 600;
+	font-size: $rem-1;
+	line-height: $rem-15;
+	color: $light-white;
+
+	transition: color $transition-300, background-color $transition-300;
+
+	cursor: pointer;
+
+	&:hover,
+	&:focus-visible {
+		outline: unset;
+		color: $black;
+	}
+
+	&--transparent {
+		background-color: transparent;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $orange;
+			color: $white;
+		}
+	}
+
+	&--orange {
+		padding: 1.06rem 2.37rem 1.06rem 2.37rem;
+		border: 1px solid $white-10;
+		background-color: $main;
+		color: $orange;
+
+		max-width: 11.5rem;
+		min-height: 4rem;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $orange;
+			color: $white;
+		}
+	}
+}

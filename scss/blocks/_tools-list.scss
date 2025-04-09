@@ -1,0 +1,231 @@
+.tools-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 6.25rem 1.56rem;
+	$root: &;
+
+	@media (max-width: 1010px) {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+
+	@media (max-width: 768px) {
+		grid-template-columns: 1fr;
+	}
+
+	&__item {
+		padding: 2.06rem 2.06rem 2.06rem 2.06rem;
+		background-color: transparent;
+		min-height: 294px;
+		border-radius: 15px;
+		width: 24.5rem;
+		position: relative;
+		overflow: hidden;
+
+		transition: background-color $transition-300, transform $transition-300;
+
+		@media (max-width: 1250px) {
+			width: unset;
+		}
+
+		@media (max-width: 768px) {
+			padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+		}
+
+		&:hover,
+		&:focus-visible {
+			outline: 2px solid $orange-light-55;
+			background-color: $grey-06;
+			transform: translateY(-0.9rem);
+
+			&::before {
+				content: '';
+				width: 6.12rem;
+				height: 6.12rem;
+				border-radius: 50%;
+				opacity: 0.4;
+				background: linear-gradient(
+					to bottom,
+					$brown-03 0%,
+					rgba(255, 255, 255, 0) 100%
+						/* цвет установлен не в переменную т.к. 255*3 0 - белый, css рассматривает как черный */
+				);
+				backdrop-filter: blur(50px);
+				position: absolute;
+				top: -2rem;
+				right: -1.31rem;
+				z-index: 0;
+				box-shadow: inset 0 0 30px rgba(255, 200, 0, 0.3),
+					0 0 60px rgba(255, 200, 0, 0.2);
+			}
+
+			#{$root}__title {
+				color: $white-90;
+			}
+
+			#{$root}__plan {
+				color: $orange-light;
+			}
+
+			#{$root}__description {
+				color: $white-78;
+			}
+		}
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 1.87rem;
+		height: 100%;
+
+		@media (max-width: 768px) {
+			gap: 1rem;
+		}
+	}
+
+	&__heading {
+		display: flex;
+		gap: 1.87rem;
+		align-items: center;
+	}
+
+	&__title-block {
+		display: flex;
+		flex-direction: column;
+		gap: 0.18rem;
+	}
+
+	&__title {
+		font-weight: 500;
+		font-size: clamp($rem-1, 5vw, $rem-15);
+		line-height: $rem-225;
+		color: $white-78;
+
+		transition: color $transition-300;
+	}
+
+	&__plan {
+		font-weight: 400;
+		font-size: clamp($rem-085, 3vw, $rem-112);
+		line-height: $rem-168;
+		color: $orange-light-55;
+
+		transition: color $transition-300;
+	}
+
+	&__description {
+		font-weight: 400;
+		font-size: clamp($rem-085, 4vw, $rem-1);
+		line-height: $rem-187;
+		color: $white-55;
+
+		transition: color $transition-300;
+	}
+
+	&__btn-block {
+		display: flex;
+		justify-content: space-between;
+		gap: 1.25rem;
+		align-items: center;
+		margin-top: auto;
+	}
+
+	&__left-menu {
+		display: flex;
+		gap: 0.75rem;
+		align-items: center;
+	}
+
+	&__fav-btn {
+		width: 2.62rem;
+		height: 2.62rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: unset;
+
+		transition: background-color $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $main-light;
+
+			#{$root}__fav-icon {
+				color: $red;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__fav-icon {
+		width: 1.75rem;
+		height: 1.75rem;
+		opacity: 0.9;
+
+		transition: color $transition-300, opacity $transition-300;
+	}
+
+	&__file-btn {
+		width: 2.62rem;
+		height: 2.62rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: unset;
+
+		&:hover,
+		&:focus-visible {
+			background-color: transparent;
+
+			#{$root}__file-icon {
+				color: $white;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__file-icon {
+		width: 1.87rem;
+		height: 1.87rem;
+		color: $white-78;
+		opacity: 0.9;
+
+		transition: color $transition-300, opacity $transition-300;
+	}
+
+	&__main-link {
+		color: $white-55;
+		padding: 0.76rem 2.18rem 0.56rem 2.18rem;
+		border-radius: 0.5rem;
+		background-color: transparent;
+		min-height: 2.62rem;
+
+		transition: background-color $transition-300, color $transition-300;
+
+		&:hover,
+		&:focus-visible {
+			background-color: $orange;
+			color: $white;
+		}
+	}
+
+	&--update {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3.12rem 1.5rem;
+
+		@media (max-width: 643px) {
+			grid-template-columns: 1fr;
+			gap: 1.5rem;
+		}
+
+		#{$root}__item {
+			padding: 1.75rem 1.31rem;
+			width: 18rem;
+
+			@media (max-width: 1010px) {
+				width: unset;
+			}
+		}
+	}
+}

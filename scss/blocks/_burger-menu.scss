@@ -1,0 +1,30 @@
+.burger-menu {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.43rem;
+	cursor: pointer;
+	padding: 0.75rem;
+
+	$root: &;
+
+	position: relative;
+
+	display: none;
+
+	@media (max-width: 768px) {
+		display: flex;
+	}
+
+	&__top-line,
+	&__main-line,
+	&__bottom-line {
+		width: 1.87rem;
+		height: 2px;
+		background-color: $white-55;
+		display: block;
+
+		transition: opacity $transition-300, transform $transition-300,
+			background-color $transition-300;
+	}
+}
