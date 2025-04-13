@@ -23,14 +23,6 @@ formEL.forEach(element => {
 	})
 })
 
-// const inputEL = document.querySelectorAll('.custom-input__field')
-
-// inputEL.forEach(element => {
-// 	element.addEventListener('focus', function () {
-// 		inputEL.style.backgroundColor = 'white'
-// 	})
-// })
-
 // анимация блоков при скролле с классом hidden-block
 document.addEventListener('DOMContentLoaded', function () {
 	const animatedBlock = document.querySelectorAll('.hidden-block')
